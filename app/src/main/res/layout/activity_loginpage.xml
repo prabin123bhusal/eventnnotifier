@@ -6,75 +6,63 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     android:orientation="vertical"
-    tools:context=".ui.Login">
+    tools:context=".ui.Loginpage">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
 
 
-            <ImageView
-                android:id="@+id/signinimage"
-                android:layout_width="300dp"
-                android:layout_height="200dp"
-                android:layout_centerHorizontal="true"
-                android:src="@drawable/login"
-                tools:ignore="MissingConstraints"
+        <ImageView
+            android:id="@+id/signinimage"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/login"
 
 
-                />
+            />
 
-            <EditText
-                android:id="@+id/txtusername"
-                android:layout_width="350dp"
-                android:layout_height="70dp"
-                android:layout_below="@id/signinimage"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/shape"
-                android:hint="Username"
-                android:textAlignment="center"
-                android:textColorHint="@color/cardview_dark_background"
-                android:textStyle="bold" />
+        <EditText
+            android:id="@+id/txtusername"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/signinimage"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape"
+            android:hint="Username"
+            android:textAlignment="center"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/txtpassword"
-                android:layout_width="350dp"
-                android:layout_height="70dp"
-                android:layout_below="@id/txtusername"
-               android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/shape"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:textAlignment="center"
-                android:textColorHint="@color/cardview_dark_background"
-                android:textStyle="bold" />
+        <EditText
+            android:id="@+id/txtpassword"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/txtusername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/loginbutton"
-                android:layout_width="300dp"
-                android:layout_height="60dp"
-                android:layout_below="@+id/txtpassword"
-               android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:background="@color/lightblue"
-                android:text="Login"
-                android:textFontWeight="30dp"
-                android:textSize="30dp"
-                android:textStyle="bold" />
+        <Button
+            android:id="@+id/loginpagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpassword"
 
-            <Button
-                android:id="@+id/movetoregister"
-                android:layout_width="300dp"
-                android:layout_height="60dp"
-                android:layout_below="@+id/loginbutton"
-               android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:background="@color/lightblue"
-                android:text="Register"
-                android:textFontWeight="30dp"
-                android:textSize="30dp"
-                android:textStyle="bold" />
+            android:text="Login" />
+        <Button
+            android:id="@+id/movetoregister"
+            android:layout_width="wrap_content"
+            android:text="Register"
+            android:layout_height="wrap_content"
+            />
 
-    </RelativeLayout>
+    </LinearLayout>
 </ScrollView>
