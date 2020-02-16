@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="12dp"
-        android:text="Events"
+        android:text="EventsNotifier"
         android:fontFamily="cursive"
         android:textColor="@color/colorAccent"
         android:textSize="40sp" />
